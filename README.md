@@ -1,10 +1,41 @@
-# PulseWear website
+# PulseWear Website & Webshop
 
-Public website and webshop for PulseWear.
+Professional static website and webshop for PulseWear, including product galleries,
+size selection, company information, checkout request flow, and a Power BI dashboard file.
 
-- Main website: `index.html`
+## Live
+
+- Website: https://ubiquitous-platypus-206fa7.netlify.app
+- Webshop: https://ubiquitous-platypus-206fa7.netlify.app/webshop/
+
+## Included
+
+- Main landing page: `index.html`
 - Webshop: `webshop/index.html`
-- Live Netlify URL: https://ubiquitous-platypus-206fa7.netlify.app
-- Live webshop URL: https://ubiquitous-platypus-206fa7.netlify.app/webshop/
+- Product styling: `webshop/style.css`
+- Shop interaction and cart logic: `webshop/script.js`
+- Product images: `webshop/assets/`
+- Power BI dashboard: `webshop/downloads/dashboardaggo.pbix`
 
-The webshop currently uses a bestelaanvraag flow by e-mail. Online payment provider integration can be added later.
+## Webshop Features
+
+- Summer and winter collections
+- Three images per product
+- Size selection per product
+- Shopping cart with quantity controls
+- VAT and shipping calculation
+- Payment preference options
+- Order request flow by e-mail
+- Company and contact information
+
+## Business Details
+
+- Address: Prins Johan Willem Frisolaan 128, 2263 CV Leidschendam
+- KvK: 73056146
+- VAT: NL220513284B01
+- E-mail: ishaa.k@live.com
+
+## Notes
+
+The webshop currently uses an order request flow by e-mail. A live payment provider
+such as Mollie or Stripe can be added later for direct online payments.
