@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PulseWear | Premium sportkleding</title>
+    <meta name="description" content="PulseWear premium sportkleding met zomer- en wintercollecties, productgalerijen, maten, bedrijfsinformatie en persoonlijke service." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home">PulseWear</a>
+      <nav aria-label="Hoofdnavigatie">
+        <a href="#collecties">Collecties</a>
+        <a href="#producten">Shop</a>
+        <a href="#checkout">Betalen</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="cart-button" id="cartToggle" type="button" aria-label="Open winkelwagen">
+        Winkelwagen <span id="cartCount">0</span>
+      </button>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Premium sport essentials</p>
+          <h1>Move soft. Train sharp.</h1>
+          <p>
+            Premium sportwear met zachte materialen, sterke lijnen en een zelfverzekerde fit.
+            Gemaakt voor training, herstel en momenten waarop comfort er net zo goed uit mag zien.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#producten">Shop nu</a>
+            <button class="ghost-link" id="seasonJump" type="button">Wissel seizoen</button>
+          </div>
+        </div>
+        <div class="hero-media" aria-label="Jonge sporters in kledingcollectie">
+          <img src="assets/hero-sport.png" alt="Jonge sporters in kleurrijke sportkleding" />
+        </div>
+      </section>
+
+      <section class="season-switch" id="collecties" aria-label="Seizoen kiezen">
+        <div>
+          <p class="eyebrow">Collecties</p>
+          <h2>Kies je editie</h2>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Seizoen">
+          <button class="tab active" type="button" data-season="summer">Zomer editie</button>
+          <button class="tab" type="button" data-season="winter">Winter editie</button>
+        </div>
+      </section>
+
+      <section class="collection-banner">
+        <img src="assets/collections.png" alt="Zomer- en wintercollectie sportkleding" />
+        <div class="collection-text">
+          <p class="eyebrow" id="seasonLabel">Zomer editie</p>
+          <h2 id="seasonTitle">Licht, snel en klaar voor zon.</h2>
+          <p id="seasonText">
+            Ademend materiaal, frisse kleuren en outfits voor hardlopen, training en straatstijl.
+          </p>
+        </div>
+      </section>
+
+      <section class="shop-section" id="producten">
+        <div class="section-heading">
+          <p class="eyebrow">Shop</p>
+          <h2>Nieuwe collectie</h2>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="trust-strip" aria-label="Servicebeloftes">
+        <article>
+          <strong>Persoonlijk besteld</strong>
+          <span>Je aanvraag wordt persoonlijk bevestigd per e-mail.</span>
+        </article>
+        <article>
+          <strong>Rustig passen</strong>
+          <span>14 dagen retour na ontvangst, mits ongedragen.</span>
+        </article>
+        <article>
+          <strong>Direct contact</strong>
+          <span>Bereikbaar via ishaa.k@live.com.</span>
+        </article>
+      </section>
+
+      <section class="checkout-preview" id="checkout">
+        <div>
+          <p class="eyebrow">Checkout</p>
+          <h2>Bestellen en betalen</h2>
+          <p>
+            Plaats je aanvraag via de winkelwagen. iDEAL, kaartbetalingen en wallets staan
+            alvast zichtbaar; je ontvangt nu persoonlijk bevestiging en betaalinstructies per e-mail.
+          </p>
+        </div>
+        <div class="payment-strip" id="paymentStrip"></div>
+      </section>
+
+      <section class="company-info" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Bedrijfsgegevens</h2>
+          <p>PulseWear verwerkt bestelaanvragen persoonlijk en reageert zo snel mogelijk per e-mail.</p>
+        </div>
+        <div class="company-grid">
+          <article>
+            <h3>Adres</h3>
+            <p>Prins Johan Willem Frisolaan 128<br />2263 CV Leidschendam</p>
+          </article>
+          <article>
+            <h3>Registratie</h3>
+            <p>KvK: 73056146<br />BTW: NL220513284B01</p>
+          </article>
+          <article>
+            <h3>Klantenservice</h3>
+            <p><a href="mailto:ishaa.k@live.com">ishaa.k@live.com</a></p>
+          </article>
+          <article>
+            <h3>Betaling</h3>
+            <p>ING Bank<br />IBAN: NL66 INGB 0008 6970 16<br />BIC: INGBNL2A</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel" aria-label="Winkelwagen">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">Jouw bestelling</p>
+          <h2>Winkelwagen</h2>
+        </div>
+        <button class="icon-button" id="cartClose" type="button" aria-label="Sluit winkelwagen">x</button>
+      </div>
+
+      <div class="cart-items" id="cartItems"></div>
+
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotaal</span>
+          <strong id="subtotal">€0,00</strong>
+        </div>
+        <div class="summary-row">
+          <span>Verzending</span>
+          <strong id="shipping">Gratis</strong>
+        </div>
+        <div class="summary-row">
+          <span>BTW 21% inbegrepen</span>
+          <strong id="vat">&euro;0,00</strong>
+        </div>
+        <div class="summary-row total">
+          <span>Totaal</span>
+          <strong id="total">€0,00</strong>
+        </div>
+
+        <fieldset class="payment-box">
+          <legend>Betaalvoorkeur</legend>
+          <label><input type="radio" name="payment" checked /> iDEAL</label>
+          <label><input type="radio" name="payment" /> Creditcard</label>
+          <label><input type="radio" name="payment" /> PayPal</label>
+          <label><input type="radio" name="payment" /> Apple Pay</label>
+          <label><input type="radio" name="payment" /> Google Pay</label>
+          <label><input type="radio" name="payment" /> Klarna</label>
+          <label><input type="radio" name="payment" /> Bankoverschrijving</label>
+          <label><input type="radio" name="payment" /> Factuur per e-mail</label>
+        </fieldset>
+
+        <button class="checkout-button" id="checkoutButton" type="button">Bestelaanvraag versturen</button>
+        <p class="checkout-note" id="checkoutMessage">Je ontvangt na je aanvraag persoonlijk bevestiging en betaalinstructies.</p>
+      </div>
+    </aside>
+
+    <section class="product-modal" id="productModal" aria-label="Product details" aria-hidden="true">
+      <div class="product-dialog">
+        <button class="icon-button modal-close" id="modalClose" type="button" aria-label="Sluit product">x</button>
+        <div class="detail-gallery">
+          <div class="detail-main-image">
+            <img id="detailImage" src="assets/collections.png" alt="" />
+          </div>
+          <div class="detail-thumbs" id="detailThumbs"></div>
+        </div>
+        <div class="detail-info">
+          <p class="eyebrow" id="detailSeason">Zomer editie</p>
+          <h2 id="detailName">Product</h2>
+          <p id="detailDescription"></p>
+          <div class="detail-price" id="detailPrice">&euro;0,00</div>
+          <div class="size-picker" id="detailSizes" aria-label="Kies maat"></div>
+          <p class="detail-tax">Inclusief 21% btw. Gratis verzending vanaf &euro;100.</p>
+          <div class="detail-actions">
+            <button class="checkout-button" id="detailAdd" type="button">Toevoegen aan winkelwagen</button>
+            <button class="ghost-link" id="detailZoom" type="button">Zoom foto</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="overlay" id="overlay"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

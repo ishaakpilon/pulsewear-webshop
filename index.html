@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Junior ICT ZZP | Direct beschikbaar</title>
+    <meta name="description" content="Junior ICT ZZP'er direct beschikbaar voor servicedesk, werkplekbeheer, functioneel beheer en IT support opdrachten.">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #17202a;
+        --muted: #586575;
+        --line: #d9e1ea;
+        --blue: #1769aa;
+        --green: #18805d;
+        --paper: #f7f9fb;
+        --white: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+        line-height: 1.55;
+      }
+
+      main {
+        width: min(980px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0;
+      }
+
+      .hero {
+        display: grid;
+        gap: 24px;
+        padding: 40px;
+        background: var(--white);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(34px, 7vw, 64px);
+        line-height: 1.02;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 22px;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 18px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 10px 16px;
+        border-radius: 6px;
+        border: 1px solid var(--blue);
+        color: var(--white);
+        background: var(--blue);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .button.secondary {
+        color: var(--blue);
+        background: var(--white);
+      }
+
+      .button.shop {
+        border-color: var(--green);
+        background: var(--green);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        margin-top: 20px;
+      }
+
+      .card {
+        min-height: 140px;
+        padding: 20px;
+        background: var(--white);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      .status {
+        display: inline-flex;
+        width: fit-content;
+        margin-bottom: 8px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        color: var(--green);
+        background: #e9f6f1;
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      section {
+        margin-top: 28px;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+        color: var(--muted);
+        font-size: 17px;
+      }
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      footer {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 620px) {
+        main {
+          padding: 24px 0;
+        }
+
+        .hero {
+          padding: 24px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div>
+          <span class="status">Direct beschikbaar</span>
+          <h1>Junior ICT ZZP</h1>
+        </div>
+        <p>
+          Beschikbaar voor servicedesk, IT support, werkplekbeheer en junior functioneel beheer.
+          Ik help teams met duidelijke communicatie, snelle opvolging en een leergierige houding.
+        </p>
+        <div class="actions">
+          <a class="button" href="mailto:jouwemail@example.com">Neem contact op</a>
+          <a class="button secondary" href="tel:+31600000000">Bel direct</a>
+          <a class="button shop" href="/webshop/">Bekijk mijn webshop</a>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid">
+          <article class="card">
+            <h2>Waarmee ik help</h2>
+            <ul>
+              <li>Servicedesk en incidentregistratie</li>
+              <li>Werkplekbeheer en gebruikerssupport</li>
+              <li>Microsoft 365 en basisbeheer</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h2>Mijn aanpak</h2>
+            <ul>
+              <li>Rustig en klantgericht communiceren</li>
+              <li>Snel leren binnen bestaande processen</li>
+              <li>Afspraak is afspraak</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h2>Beschikbaarheid</h2>
+            <ul>
+              <li>Per direct inzetbaar</li>
+              <li>ZZP, tijdelijk of projectbasis</li>
+              <li>Nederland, hybride of remote</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h2>Webshop</h2>
+            <ul>
+              <li>Bekijk mijn online kledingwinkel</li>
+              <li>Zomer- en wintercollectie</li>
+              <li><a href="/webshop/">Ga naar de webshop</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <footer>
+        Pas de contactgegevens aan voordat je deze pagina breed deelt.
+      </footer>
+    </main>
+  </body>
+</html>
