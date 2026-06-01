@@ -89,7 +89,13 @@ const products = [
   },
 ];
 
-const paymentMethods = ["iDEAL", "Visa", "Mastercard", "PayPal", "Apple Pay", "Google Pay", "Klarna", "Bankoverschrijving"];
+const paymentMethods = [
+  { label: "iDEAL", className: "ideal" },
+  { label: "VISA", className: "visa" },
+  { label: "Mastercard", className: "mastercard" },
+  { label: "PayPal", className: "paypal" },
+  { label: "Klarna", className: "klarna" },
+];
 const cart = new Map();
 let activeSeason = "summer";
 let activeProductId = null;
@@ -169,8 +175,13 @@ function renderProducts() {
 }
 
 function renderPayments() {
+  if (!paymentStrip) return;
   paymentStrip.innerHTML = paymentMethods
-    .map((method, index) => `<span style="--payment-delay: ${index}">${method}</span>`)
+    .map((method) =>
+      method.className === "mastercard"
+        ? `<span class="pay-logo mastercard"><span></span><span></span> ${method.label}</span>`
+        : `<span class="pay-logo ${method.className}">${method.label}</span>`,
+    )
     .join("");
 }
 
@@ -332,11 +343,6 @@ document.querySelector("#modalClose").addEventListener("click", closeProductModa
 overlay.addEventListener("click", () => {
   closeCart();
   closeProductModal();
-});
-
-document.querySelector("#seasonJump").addEventListener("click", () => {
-  updateSeason(activeSeason === "summer" ? "winter" : "summer");
-  document.querySelector("#collecties").scrollIntoView({ behavior: "smooth" });
 });
 
 document.querySelectorAll(".tab").forEach((tab) => {

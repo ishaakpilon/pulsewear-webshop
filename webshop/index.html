@@ -9,13 +9,13 @@
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#home">PulseWear</a>
+      <a class="brand" href="./">PulseWear</a>
       <nav aria-label="Hoofdnavigatie">
-        <a href="#collecties">Collecties</a>
-        <a href="#producten">Shop</a>
-        <a href="#checkout">Betalen</a>
-        <a href="#dashboard">Dashboard</a>
-        <a href="#contact">Contact</a>
+        <a href="collecties.html">Collecties</a>
+        <a href="./">Shop</a>
+        <a href="betalen.html">Betalen</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <button class="cart-button" id="cartToggle" type="button" aria-label="Open winkelwagen">
         Winkelwagen <span id="cartCount">0</span>
@@ -33,7 +33,7 @@
           </p>
           <div class="hero-actions">
             <a class="primary-link" href="#producten">Shop nu</a>
-            <button class="ghost-link" id="seasonJump" type="button">Wissel seizoen</button>
+            <a class="ghost-link" href="collecties.html">Bekijk collecties</a>
           </div>
         </div>
         <div class="hero-media" aria-label="Jonge sporters in kledingcollectie">
@@ -86,56 +86,6 @@
         </article>
       </section>
 
-      <section class="checkout-preview" id="checkout">
-        <div>
-          <p class="eyebrow">Checkout</p>
-          <h2>Bestellen en betalen</h2>
-          <p>
-            Plaats je aanvraag via de winkelwagen. iDEAL, kaartbetalingen en wallets staan
-            alvast zichtbaar; je ontvangt nu persoonlijk bevestiging en betaalinstructies per e-mail.
-          </p>
-        </div>
-        <div class="payment-strip" id="paymentStrip"></div>
-      </section>
-
-      <section class="dashboard-download" id="dashboard">
-        <div>
-          <p class="eyebrow">Power BI</p>
-          <h2>Dashboardbestand</h2>
-          <p>
-            Download het Power BI-dashboard en open het in Power BI Desktop.
-            Automatische verwerking van webshopdata kan later worden gekoppeld via
-            een database, Google Sheets, Power BI Service of een betaalprovider-export.
-          </p>
-        </div>
-        <a class="primary-link" href="downloads/dashboardaggo.pbix" download>Download dashboard</a>
-      </section>
-
-      <section class="company-info" id="contact">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Bedrijfsgegevens</h2>
-          <p>PulseWear verwerkt bestelaanvragen persoonlijk en reageert zo snel mogelijk per e-mail.</p>
-        </div>
-        <div class="company-grid">
-          <article>
-            <h3>Adres</h3>
-            <p>Prins Johan Willem Frisolaan 128<br />2263 CV Leidschendam</p>
-          </article>
-          <article>
-            <h3>Registratie</h3>
-            <p>KvK: 73056146<br />BTW: NL220513284B01</p>
-          </article>
-          <article>
-            <h3>Klantenservice</h3>
-            <p><a href="mailto:ishaa.k@live.com">ishaa.k@live.com</a></p>
-          </article>
-          <article>
-            <h3>Betaling</h3>
-            <p>ING Bank<br />IBAN: NL66 INGB 0008 6970 16<br />BIC: INGBNL2A</p>
-          </article>
-        </div>
-      </section>
     </main>
 
     <aside class="cart-panel" id="cartPanel" aria-label="Winkelwagen">
@@ -169,14 +119,11 @@
 
         <fieldset class="payment-box">
           <legend>Betaalvoorkeur</legend>
-          <label><input type="radio" name="payment" checked /> iDEAL</label>
-          <label><input type="radio" name="payment" /> Creditcard</label>
-          <label><input type="radio" name="payment" /> PayPal</label>
-          <label><input type="radio" name="payment" /> Apple Pay</label>
-          <label><input type="radio" name="payment" /> Google Pay</label>
-          <label><input type="radio" name="payment" /> Klarna</label>
-          <label><input type="radio" name="payment" /> Bankoverschrijving</label>
-          <label><input type="radio" name="payment" /> Factuur per e-mail</label>
+          <label><input type="radio" name="payment" checked /> <span class="pay-logo ideal">iDEAL</span></label>
+          <label><input type="radio" name="payment" /> <span class="pay-logo visa">VISA</span></label>
+          <label><input type="radio" name="payment" /> <span class="pay-logo mastercard"><span></span><span></span> Mastercard</span></label>
+          <label><input type="radio" name="payment" /> <span class="pay-logo paypal">PayPal</span></label>
+          <label><input type="radio" name="payment" /> <span class="pay-logo klarna">Klarna</span></label>
         </fieldset>
 
         <button class="checkout-button" id="checkoutButton" type="button">Bestelaanvraag versturen</button>
