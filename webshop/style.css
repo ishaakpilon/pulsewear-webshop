@@ -212,6 +212,7 @@ h3 {
 .season-switch,
 .shop-section,
 .checkout-preview,
+.dashboard-download,
 .company-info,
 .trust-strip {
   padding: 42px clamp(18px, 5vw, 72px);
@@ -424,6 +425,23 @@ h3 {
   gap: 26px;
   align-items: center;
   background: var(--surface-soft);
+}
+
+.dashboard-download {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.dashboard-download p {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
 }
 
 .payment-strip {
@@ -724,6 +742,7 @@ h3 {
 @media (max-width: 980px) {
   .hero,
   .checkout-preview,
+  .dashboard-download,
   .product-dialog {
     grid-template-columns: 1fr;
   }
