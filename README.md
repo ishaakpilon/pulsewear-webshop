@@ -15,7 +15,16 @@ size selection, company information, checkout request flow, and a Power BI dashb
 - Product styling: `webshop/style.css`
 - Shop interaction and cart logic: `webshop/script.js`
 - Product images: `webshop/assets/`
-- Power BI dashboard: `webshop/downloads/dashboardaggo.pbix`
+- Power BI dashboard: `PowerBI/dashboardaggo.pbix`
+- Webshop download copy: `webshop/downloads/dashboardaggo.pbix`
+
+## Power BI Dashboard
+
+GitHub cannot preview `.pbix` files in the browser. Download the file and open it
+with Power BI Desktop:
+
+- Dashboard file: [`PowerBI/dashboardaggo.pbix`](PowerBI/dashboardaggo.pbix)
+- Direct download: https://raw.githubusercontent.com/ishaakpilon/pulsewear-webshop/main/PowerBI/dashboardaggo.pbix
 
 ## Webshop Features
 
